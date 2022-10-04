@@ -20,6 +20,7 @@
   display: flex;
   position: relative;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .logo_plase_header {
@@ -42,7 +43,8 @@
   z-index: 5;
 }
 
-.header_subtitle {
+.header__subtitle {
+  margin: 0;
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -156,6 +158,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .table__cell {
@@ -180,7 +185,7 @@
 
 .feynman {
   margin: 100px 0 0;
-  height: 890px;
+  min-height: 890px;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -242,9 +247,11 @@
 }
 
 .section-title_theme_dark {
+  z-index: 2;
 }
 
 .section-subtitle_theme_dark {
+  z-index: 3;
 }
 
 .table_theme_dark {
@@ -257,24 +264,30 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .table__heading_theme_dark {
+  z-index: 1;
 }
 
 .table__text_theme_dark {
+  z-index: 1;
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
   z-index: 0;
   height: 877px;
   width: 877px;
   position: absolute;
   right: -210px;
+  background-size: cover;
 }
 
 /*//////////kaufman//////////*/
+
+/*//////////footer//////////*/
 
 .footer {
   background-color: #1f1f1f;
@@ -342,3 +355,5 @@ width: 16px;
 height: 16px;
 margin: 0 10px 0 0;
 }
+
+/*//////////footer//////////*/
