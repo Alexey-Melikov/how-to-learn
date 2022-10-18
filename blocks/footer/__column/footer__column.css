@@ -1,5 +1,4 @@
-.khan__container {
-  width: 80%;
+.footer__column {
   display: flex;
   flex-direction: column;
 }

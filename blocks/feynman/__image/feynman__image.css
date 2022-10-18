@@ -1,4 +1,5 @@
 .feynman__image {
+  background-image: url(../../../images/pictures/feynman.png);
   display: flex;
   position: absolute;
   height: 637px;
